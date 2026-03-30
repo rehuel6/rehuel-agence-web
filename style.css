@@ -1,0 +1,259 @@
+/* ===== VARIABLES & RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --couleur-or: #c9a84c;
+  --couleur-noir: #0a0a0a;
+  --couleur-gris: #1a1a1a;
+  --couleur-texte: #f0f0f0;
+  --police-titre: 'Georgia', serif;
+  --police-texte: 'Arial', sans-serif;
+}
+
+body {
+  background-color: var(--couleur-noir);
+  color: var(--couleur-texte);
+  font-family: var(--police-texte);
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: var(--couleur-gris);
+  border-bottom: 2px solid var(--couleur-or);
+}
+
+nav .logo {
+  font-family: var(--police-titre);
+  font-size: 1.8rem;
+  color: var(--couleur-or);
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: var(--couleur-texte);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--couleur-or);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: var(--couleur-gris);
+  color: var(--couleur-texte);
+  text-align: center;
+  padding: 30px;
+  border-top: 2px solid var(--couleur-or);
+  font-size: 0.9rem;
+}
+
+/* ===== BOUTON ===== */
+.btn-principal {
+  background-color: var(--couleur-or);
+  color: var(--couleur-noir);
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+
+.btn-principal:hover {
+  opacity: 0.85;
+}
+/* ===== HERO ===== */
+.hero {
+  background-color: var(--couleur-gris);
+  text-align: center;
+  padding: 120px 60px;
+  border-bottom: 2px solid var(--couleur-or);
+}
+
+.hero h1 {
+  font-family: var(--police-titre);
+  font-size: 3rem;
+  color: var(--couleur-or);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: var(--couleur-texte);
+}
+
+/* ===== PRÉSENTATION ===== */
+.presentation {
+  padding: 80px 60px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.presentation h2 {
+  font-family: var(--police-titre);
+  font-size: 2rem;
+  color: var(--couleur-or);
+  margin-bottom: 20px;
+}
+
+.presentation p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: var(--couleur-texte);
+}
+/* ===== SERVICES ===== */
+.services {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.services h2 {
+  font-family: var(--police-titre);
+  font-size: 2rem;
+  color: var(--couleur-or);
+  margin-bottom: 50px;
+}
+
+.grille-services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.carte-service {
+  background-color: var(--couleur-gris);
+  border: 1px solid var(--couleur-or);
+  padding: 30px;
+  text-align: left;
+}
+
+.carte-service h3 {
+  font-family: var(--police-titre);
+  font-size: 1.4rem;
+  color: var(--couleur-or);
+  margin-bottom: 15px;
+}
+
+.carte-service p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.prix {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--couleur-or);
+}
+/* ===== À PROPOS ===== */
+.apropos {
+  padding: 80px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.apropos h2 {
+  font-family: var(--police-titre);
+  font-size: 2rem;
+  color: var(--couleur-or);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.apropos p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+.grille-equipe {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.carte-membre {
+  background-color: var(--couleur-gris);
+  border: 1px solid var(--couleur-or);
+  padding: 25px;
+  text-align: center;
+}
+
+.carte-membre h3 {
+  font-family: var(--police-titre);
+  font-size: 1.2rem;
+  color: var(--couleur-or);
+  margin-bottom: 10px;
+}
+
+.role {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--couleur-or);
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.carte-membre p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+/* ===== CONTACT ===== */
+.contact {
+  padding: 80px 60px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact h2 {
+  font-family: var(--police-titre);
+  font-size: 2rem;
+  color: var(--couleur-or);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-infos {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-infos p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--couleur-texte);
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formulaire input,
+.formulaire textarea {
+  background-color: var(--couleur
